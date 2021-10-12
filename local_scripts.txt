@@ -1,0 +1,7 @@
+database/structure/ooush_users.sql
+database/structure/ooush_appsettings.sql
+database/structure/ooush_emailtemplate.sql
+database/structure/ooush_logintoken.sql
+database/data/ooush_users.sql
+database/data/ooush_appsettings.sql
+database/data/ooush_emailtemplate.sql
