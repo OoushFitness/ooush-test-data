@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 5.7.17, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
 --
--- Host: localhost    Database: door
+-- Host: localhost    Database: ooush
 -- ------------------------------------------------------
 -- Server version	5.7.21-log
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -21,7 +21,7 @@
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'alex@ooushfitness.com','',1,'$2a$08$svfVbtVTSEDcBtp1mWvYceVQLl3xH5ACBaE3bpKHdN8roN1FJMxD2','+447846967190',0,'alex@ooushfitness.com','Alex','Green','VERIFIED','660163a5-e141-4e86-9410-e27b2d0b41fe','2018-03-01 11:30:19','a2ac4b3e-b7d3-4da4-b7bb-91a37847970f','2018-03-01 13:06:06','Manchester','\0','2118-01-01 02:13:37','6b509ec6-7ff1-43e2-a4fb-85017b4a1768',1,0),(2,'pete@ooushfitness.com','',1,'$2a$08$svfVbtVTSEDcBtp1mWvYceVQLl3xH5ACBaE3bpKHdN8roN1FJMxD2','+447846967190',0,'pete@ooushfitness.com','Pete','Smith','VERIFIED','660163a5-e141-4e86-9410-e27b2d0b41fe','2018-03-01 11:30:19','a2ac4b3e-b7d3-4da4-b7bb-91a37847970f','2018-03-01 13:06:06','Manchester','\0','2118-01-01 02:13:37','6b509ec6-7ff1-43e2-a4fb-85017b4a1768',1,0),(3,'luke@ooushfitness.com','',1,'$2a$08$svfVbtVTSEDcBtp1mWvYceVQLl3xH5ACBaE3bpKHdN8roN1FJMxD2','+447846967190',0,'luke@ooushfitness.com','Luke','Jackson','VERIFIED','660163a5-e141-4e86-9410-e27b2d0b41fe','2018-03-01 11:30:19','a2ac4b3e-b7d3-4da4-b7bb-91a37847970f','2018-03-01 13:06:06','Leeds','\0','2118-01-01 02:13:37','6b509ec6-7ff1-43e2-a4fb-85017b4a1768',1,0);
+INSERT INTO `users` VALUES (1,'alex@ooushfitness.com',_binary '',1,'$2a$08$svfVbtVTSEDcBtp1mWvYceVQLl3xH5ACBaE3bpKHdN8roN1FJMxD2','+447846967190',0,'alex@ooushfitness.com','Alex','Green','VERIFIED','660163a5-e141-4e86-9410-e27b2d0b41fe','2018-03-01 11:30:19','a2ac4b3e-b7d3-4da4-b7bb-91a37847970f','2018-03-01 13:06:06','Manchester',_binary '\0','2118-01-01 02:13:37','6b509ec6-7ff1-43e2-a4fb-85017b4a1768',1,0),(2,'pete@ooushfitness.com',_binary '',1,'$2a$08$svfVbtVTSEDcBtp1mWvYceVQLl3xH5ACBaE3bpKHdN8roN1FJMxD2','+447846967190',0,'pete@ooushfitness.com','Pete','Smith','VERIFIED','660163a5-e141-4e86-9410-e27b2d0b41fe','2018-03-01 11:30:19','a2ac4b3e-b7d3-4da4-b7bb-91a37847970f','2018-03-01 13:06:06','Manchester',_binary '\0','2118-01-01 02:13:37','6b509ec6-7ff1-43e2-a4fb-85017b4a1768',1,0),(3,'luke@ooushfitness.com',_binary '',1,'$2a$08$svfVbtVTSEDcBtp1mWvYceVQLl3xH5ACBaE3bpKHdN8roN1FJMxD2','+447846967190',0,'luke@ooushfitness.com','Luke','Jackson','VERIFIED','660163a5-e141-4e86-9410-e27b2d0b41fe','2018-03-01 11:30:19','a2ac4b3e-b7d3-4da4-b7bb-91a37847970f','2018-03-01 13:06:06','Leeds',_binary '\0','2118-01-01 02:13:37','6b509ec6-7ff1-43e2-a4fb-85017b4a1768',1,0),(4,'test_user_1@ooushfitness.com',_binary '',1,'$2a$08$svfVbtVTSEDcBtp1mWvYceVQLl3xH5ACBaE3bpKHdN8roN1FJMxD2','+447846967190',0,'test_user_1@ooushfitness.com','Testy','McTest','VERIFIED','660163a5-e141-4e86-9410-e27b2d0b41fe','2018-03-01 11:30:19','a2ac4b3e-b7d3-4da4-b7bb-91a37847970f','2018-03-01 13:06:06','Leeds',_binary '\0','2118-01-01 02:13:37','6b509ec6-7ff1-43e2-a4fb-85017b4a1768',1,0);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -34,4 +34,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-08-04  9:23:22
+-- Dump completed on 2022-04-24 22:11:33
