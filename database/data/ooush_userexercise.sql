@@ -21,7 +21,7 @@
 
 LOCK TABLES `userexercise` WRITE;
 /*!40000 ALTER TABLE `userexercise` DISABLE KEYS */;
-INSERT INTO `userexercise` VALUES (1,4,1,60,6);
+INSERT INTO `userexercise` VALUES (1,4,1,60,6,1);
 /*!40000 ALTER TABLE `userexercise` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

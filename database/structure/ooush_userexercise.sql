@@ -28,11 +28,14 @@ CREATE TABLE `userexercise` (
   `ExerciseId` int(11) NOT NULL,
   `Weight` int(11) NOT NULL,
   `Reps` int(11) NOT NULL,
+  `ExerciseDayId` int NOT NULL,
   PRIMARY KEY (`Id`),
   KEY `fk_userexercise_user` (`UserId`),
   KEY `fk_userexercise_exercise` (`ExerciseId`),
+  KEY `fk_userexercise_exerciseday` (`ExerciseDayId`),
   CONSTRAINT `fk_userexercise_exercise` FOREIGN KEY (`ExerciseId`) REFERENCES `exercise` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_userexercise_user` FOREIGN KEY (`UserId`) REFERENCES `users` (`UsersID`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `fk_userexercise_user` FOREIGN KEY (`UserId`) REFERENCES `users` (`UsersID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_userexercise_exerciseday` FOREIGN KEY (`ExerciseDayId`) REFERENCES `exerciseday` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
