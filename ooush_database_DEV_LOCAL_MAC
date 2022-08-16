@@ -1,0 +1,13 @@
+#!/bin/bash
+set -x
+echo off
+echo Clearing database
+mysql -h 127.0.0.1 -uroot -pLiverpool1 < database/drop.sql
+echo Entering test data into ooush database
+mysql -h 127.0.0.1 -uroot -pLiverpool1 < database/create.sql
+cat local_scripts.txt | while read line
+do
+	echo $line
+	mysql -h 127.0.0.1 -uroot -pLiverpool1 ooush < $line
+done
+echo Database teardown complete
