@@ -21,7 +21,7 @@
 
 LOCK TABLES `exerciseday` WRITE;
 /*!40000 ALTER TABLE `exerciseday` DISABLE KEYS */;
-INSERT INTO `exerciseday` VALUES (1,_binary '','Monday',0),(2,_binary '','Tuesday',1),(3,_binary '','Wednesday',2),(4,_binary '','Thursday',3),(5,_binary '','Friday',4),(6,_binary '\0','Saturday',5),(7,_binary '\0','Sunday',6);
+INSERT INTO `exerciseday` VALUES (1,_binary '','Monday',0),(2,_binary '','Tuesday',1),(3,_binary '','Wednesday',2),(4,_binary '','Thursday',3),(5,_binary '\0','Friday',4),(6,_binary '\0','Saturday',5),(7,_binary '\0','Sunday',6);
 /*!40000 ALTER TABLE `exerciseday` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
