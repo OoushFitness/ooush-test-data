@@ -26,7 +26,7 @@ CREATE TABLE `userworkoutday` (
   `Id` int NOT NULL AUTO_INCREMENT,
   `UserId` int NOT NULL,
   `ExerciseDayId` int NOT NULL,
-  `Name` varchar(256) NOT NULL,
+  `Name` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`Id`),
   KEY `fk_userdaytitle_user` (`UserId`),
   KEY `fk_userdaytitle_exerciseday` (`ExerciseDayId`),
@@ -44,4 +44,4 @@ CREATE TABLE `userworkoutday` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-08-31  0:50:16
+-- Dump completed on 2022-09-05 17:36:50

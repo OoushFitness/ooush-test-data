@@ -6,6 +6,7 @@ database/structure/ooush_exercise.sql
 database/structure/ooush_exerciseday.sql
 database/structure/ooush_userexercise.sql
 database/structure/ooush_exercisebitmapposition.sql
+database/structure/ooush_userworkoutday.sql
 database/data/ooush_users.sql
 database/data/ooush_appsettings.sql
 database/data/ooush_emailtemplate.sql
@@ -13,3 +14,4 @@ database/data/ooush_exercisebitmapposition.sql
 database/data/ooush_exerciseday.sql
 database/data/ooush_exercise.sql
 database/data/ooush_userexercise.sql
+database/data/ooush_userworkoutday.sql
