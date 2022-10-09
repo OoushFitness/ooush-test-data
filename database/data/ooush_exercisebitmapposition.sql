@@ -21,7 +21,7 @@
 
 LOCK TABLES `exercisebitmapposition` WRITE;
 /*!40000 ALTER TABLE `exercisebitmapposition` DISABLE KEYS */;
-INSERT INTO `exercisebitmapposition` VALUES (1,'Body Area','Upper',1),(2,'Body Area','Lower',2),(3,'Push/Pull','Push',3),(4,'Push/Pull','Pull',4),(5,'Body Part','Arms',5),(6,'Body Part','Chest',6),(7,'Body Part','Shoulders',7),(8,'Body Part','Back',8),(9,'Body Part','Legs',9);
+INSERT INTO `exercisebitmapposition` VALUES (1,'Body Area','Upper',1),(2,'Body Area','Lower',2),(3,'Push/Pull','Push',3),(4,'Push/Pull','Pull',4),(5,'Body Part','Arms',5),(6,'Body Part','Chest',6),(7,'Body Part','Shoulders',7),(8,'Body Part','Back',8),(9,'Body Part','Legs',9),(10,'Custom Exercise','Custom',10);
 /*!40000 ALTER TABLE `exercisebitmapposition` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
