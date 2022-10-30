@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.30, for macos12 (x86_64)
 --
 -- Host: localhost    Database: ooush
 -- ------------------------------------------------------
--- Server version	5.7.21-log
+-- Server version	8.0.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -21,7 +21,7 @@
 
 LOCK TABLES `userexercise` WRITE;
 /*!40000 ALTER TABLE `userexercise` DISABLE KEYS */;
-INSERT INTO `userexercise` VALUES (1,4,1,60,6,1);
+INSERT INTO `userexercise` VALUES (1,4,1,60,6,4,1);
 /*!40000 ALTER TABLE `userexercise` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -34,4 +34,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-24 23:10:48
+-- Dump completed on 2022-10-30 14:20:02

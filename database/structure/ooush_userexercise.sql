@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.30, for macos12 (x86_64)
 --
 -- Host: localhost    Database: ooush
 -- ------------------------------------------------------
--- Server version	5.7.21-log
+-- Server version	8.0.30
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -23,20 +23,21 @@ DROP TABLE IF EXISTS `userexercise`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `userexercise` (
-  `Id` int(11) NOT NULL AUTO_INCREMENT,
-  `UserId` int(11) NOT NULL,
-  `ExerciseId` int(11) NOT NULL,
-  `Weight` int(11) NOT NULL,
-  `Reps` int(11) NOT NULL,
+  `Id` int NOT NULL AUTO_INCREMENT,
+  `UserId` int NOT NULL,
+  `ExerciseId` int NOT NULL,
+  `Weight` int NOT NULL,
+  `Reps` int NOT NULL,
+  `Sets` int NOT NULL DEFAULT '0',
   `ExerciseDayId` int NOT NULL,
   PRIMARY KEY (`Id`),
   KEY `fk_userexercise_user` (`UserId`),
   KEY `fk_userexercise_exercise` (`ExerciseId`),
   KEY `fk_userexercise_exerciseday` (`ExerciseDayId`),
-  CONSTRAINT `fk_userexercise_exercise` FOREIGN KEY (`ExerciseId`) REFERENCES `exercise` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_userexercise_user` FOREIGN KEY (`UserId`) REFERENCES `users` (`UsersID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_userexercise_exerciseday` FOREIGN KEY (`ExerciseDayId`) REFERENCES `exerciseday` (`Id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  CONSTRAINT `fk_userexercise_exercise` FOREIGN KEY (`ExerciseId`) REFERENCES `exercise` (`Id`),
+  CONSTRAINT `fk_userexercise_exerciseday` FOREIGN KEY (`ExerciseDayId`) REFERENCES `exerciseday` (`Id`),
+  CONSTRAINT `fk_userexercise_user` FOREIGN KEY (`UserId`) REFERENCES `users` (`UsersID`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -48,4 +49,4 @@ CREATE TABLE `userexercise` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-04-24 21:45:46
+-- Dump completed on 2022-10-30 14:20:15
