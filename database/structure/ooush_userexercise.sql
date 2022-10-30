@@ -28,7 +28,7 @@ CREATE TABLE `userexercise` (
   `ExerciseId` int NOT NULL,
   `Weight` int NOT NULL,
   `Reps` int NOT NULL,
-  `Sets` int NOT NULL DEFAULT '0',
+  `Sets` int NOT NULL DEFAULT '1',
   `ExerciseDayId` int NOT NULL,
   PRIMARY KEY (`Id`),
   KEY `fk_userexercise_user` (`UserId`),
