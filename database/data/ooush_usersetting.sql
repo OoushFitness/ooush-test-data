@@ -21,7 +21,7 @@
 
 LOCK TABLES `usersetting` WRITE;
 /*!40000 ALTER TABLE `usersetting` DISABLE KEYS */;
-INSERT INTO `usersetting` VALUES (1,1,'kg'),(2,2,'kg'),(3,3,'kg'),(4,4,'kg');
+INSERT INTO `usersetting` VALUES (1,1,'KG'),(2,2,'KG'),(3,3,'KG'),(4,4,'KG');
 /*!40000 ALTER TABLE `usersetting` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

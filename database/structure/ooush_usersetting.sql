@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `usersetting`;
 CREATE TABLE `usersetting` (
   `Id` int NOT NULL AUTO_INCREMENT,
   `UserId` int NOT NULL,
-  `WeightMeasurement` varchar(256) NOT NULL DEFAULT 'kg',
+  `WeightDenomination` varchar(256) NOT NULL DEFAULT 'kg',
   PRIMARY KEY (`Id`),
   KEY `fk_usersetting_user` (`UserId`),
   CONSTRAINT `fk_usersetting_user` FOREIGN KEY (`UserId`) REFERENCES `users` (`UsersID`)
