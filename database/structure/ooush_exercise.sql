@@ -26,6 +26,7 @@ CREATE TABLE `exercise` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `Name` varchar(255) DEFAULT NULL,
   `Bitmap` int(64) NOT NULL DEFAULT '0',
+  `UserId` int DEFAULT NULL,
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
