@@ -21,7 +21,7 @@
 
 LOCK TABLES `exercise` WRITE;
 /*!40000 ALTER TABLE `exercise` DISABLE KEYS */;
-INSERT INTO `exercise` VALUES (1,'Bench Press',37),(2,'Leg Press',262),(3,'Pull Up',137),(4,'Preacher Dumbell Curls',25),(5,'Shoulder Barbell Press',69),(6,'Dead Lift',137);
+INSERT INTO `exercise` VALUES (1,'Bench Press',37, NULL),(2,'Leg Press',262, NULL),(3,'Pull Up',137, NULL),(4,'Preacher Dumbell Curls',25, NULL),(5,'Shoulder Barbell Press',69, NULL),(6,'Dead Lift',137, NULL);
 /*!40000 ALTER TABLE `exercise` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
